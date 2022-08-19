@@ -1,0 +1,22 @@
+<table  class="table">
+    <thead>
+        <tr style="padding: 0 5px">
+            <th scope="col">Id</th>
+            <th scope="col">Course Title</th>
+            <th scope="col">Course Duration</th>
+            <th scope="col">Course Content</th>
+            <th scope="col">Is Course Availabe</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td> <a class="'btn btn-success btn-lg" [routerLink]="['/dashboard/courses/edit/', course.id]" >Update </a>
+            
+            <a>{{course.courseTitle}}</a>
+        </td>
+        <td>{{course.courseDuration}}</td>
+        <td>{{course.courseContent}}</td>
+        <td>{{course.isAvailable}}</td>
+    </tr>
+</tbody>
+</table>
